@@ -1,0 +1,93 @@
+.blog__section {
+	display: grid;
+	grid-gap: 10px;
+}
+.blog__img {
+	width: 100%;
+}
+.blog__title {
+	color: #00F;
+}
+
+.fa__icon {
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+.fa-facebook-f {
+  background: #3B5998;
+  color: #FFF;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: #FFF;
+}
+.fa-linkedin-in{
+  background: #007bb5;
+  color: #FFF;
+}
+
+.blog__about {
+	background: #EEE;
+	padding: 15px;
+}
+
+.blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+.blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.blockquote:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.25em;
+  vertical-align: -0.5em;
+}
+
+
+.btn {
+	background: transparent;
+    border-radius: 20px;
+    padding: 5px;
+}
+.older__post__btn {
+	border-color: #3498db;
+	color: #3498db;
+}
+.older__post__btn:hover {
+	cursor: pointer;
+	border-color: #2980b9;
+	background-color: #2980b9;
+	color: #FFF;
+}
+
+/* for Medium size screen (tablet) */
+@media(min-width: 600px) and (max-width: 900px) {
+	.container {
+		margin: 20px 100px;
+	}
+	.blog__section{
+		grid-template-columns: 75% 25%;
+	}
+}
+/* for big size screen */
+@media(min-width: 901px) {
+	.container {
+		margin: 20px 100px;
+	}
+	.blog__section {
+		grid-template-columns: 75% 25%;
+	}
+}

@@ -1,0 +1,75 @@
+@import '../fontawesome/css/all.css';
+@import 'blog_post_style.css';
+
+.container {
+	font-family: 'Poppins', sans-serif;
+}
+.header {
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.sub {
+	width: 33%;
+}
+
+.title {
+	width: 33%;
+	text-decoration: underline;
+	font-size: 16px;
+}
+
+.fa-search {
+	width: 33% !important;
+}
+
+.card__wrapper {
+	display: grid;
+    grid-gap: 10px;
+}
+
+.card {
+	/*border: 5px solid #3498db;*/
+	/*background-color: #3498db;*/
+	  /*color: #fff;*/
+	  border: 1px solid #BFBFBF;
+	  border-radius: 5px;
+	  padding: 20px;
+	  box-shadow: 5px 5px 5px #aaaaaa;
+	   transition: transform .5s ease-in-out;
+}
+.card:hover {
+	  transform: scale(1.02); 
+}
+
+.card__img {
+	width: 100%;
+}
+
+.footer {
+	margin-top: 20px;
+	padding: 20px;
+	text-align: center;
+	background: #DDD;
+	color: #777;
+}
+
+/* for Medium size screen (tablet) */
+@media(min-width: 600px) and (max-width: 900px) {
+	.container {
+		margin: 20px 100px;
+	}
+	.card__wrapper {
+		grid-template-columns: 50% 50%;
+	}
+}
+/* for big size screen */
+@media(min-width: 901px) {
+	.container {
+		margin: 20px 100px;
+	}
+	.card__wrapper {
+		grid-template-columns: 50% 50%;
+	}
+}
